@@ -13,7 +13,7 @@ const (
 	cDaysInWeek = 7
 )
 
-var smallMonthsMap map[int]bool
+var smallMonthsMap []bool
 
 func main() {
 	var firstSundaysCount int
@@ -41,8 +41,8 @@ func main() {
 
 }
 
-func setupSmallMonths() map[int]bool {
-	smallMonths := make(map[int]bool)
+func setupSmallMonths() []bool {
+	smallMonths := make([]bool, 13, 13)
 	smallMonths[4] = true
 	smallMonths[6] = true
 	smallMonths[9] = true
