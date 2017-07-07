@@ -1,16 +1,26 @@
 package main
 
 import (
-	"encoding/json"
 	"fmt"
 
 	"github.com/Perseverance/udemy-go-tut/12_structs/person"
 )
 
 func main() {
-	ivan := person.NewPerson()
-	fmt.Println(ivan.SayYo())
-	bs, _ := json.Marshal(ivan)
+	Djena := person.NewWoman()
+	// encoder := json.NewEncoder(os.Stdout)
+	// encoder.Encode(&Djena)
 
-	fmt.Println(string(bs))
+	fmt.Println(Djena)
+
+	// fmt.Println(Djena.SayYo())
+	//
+	// decoder := json.NewDecoder(os.Stdin)
+	//
+	// decoder.Decode(&Djena)
+	//
+	// fmt.Println(Djena)
+	//
+	// fmt.Println(Djena.LastName)
+
 }
